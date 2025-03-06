@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace LeaveManagementSystem.Web.Models.LeaveTypes
+﻿namespace LeaveManagementSystem.Web.Models.LeaveTypes
 {
     public class LeaveTypeCreateVM
     {
