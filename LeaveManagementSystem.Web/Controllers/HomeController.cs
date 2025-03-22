@@ -12,10 +12,8 @@ namespace LeaveManagementSystem.Web.Controllers
             _logger = logger;
         }
 
-        // Method to be called
         public IActionResult Index()
         {
-            // Define business logic
             return View();
         }
 

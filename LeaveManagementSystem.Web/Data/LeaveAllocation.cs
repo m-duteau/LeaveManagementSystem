@@ -6,7 +6,7 @@
         public int LeaveTypeId { get; set; }
 
         public ApplicationUser? Employee { get; set; }
-        public string EmployeeId { get; set; }
+        public string EmployeeId { get; set; } = default!;
 
         public Period? Period { get; set; }
         public int PeriodId { get; set; }
