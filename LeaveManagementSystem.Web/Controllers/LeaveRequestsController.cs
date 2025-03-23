@@ -1,8 +1,7 @@
-﻿using LeaveManagementSystem.Web.Models.LeaveRequests;
-using LeaveManagementSystem.Web.Services.LeaveRequests;
-using LeaveManagementSystem.Web.Services.LeaveTypes;
+﻿using LeaveManagementSystem.Application.Models.LeaveRequests;
+using LeaveManagementSystem.Application.Services.LeaveRequests;
+using LeaveManagementSystem.Application.Services.LeaveTypes;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using System.Runtime.InteropServices;
 
 namespace LeaveManagementSystem.Web.Controllers;
 
