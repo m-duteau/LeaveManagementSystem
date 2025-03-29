@@ -7,17 +7,19 @@
     string message = isAdmin ? "There are no allocations for this user." : "You have no allocations, please contact your Administrator.";
 }
 
-<h1>View Allocations for @Model.FirstName @Model.LastName</h1>
+<h1 align="center">Allocations for @Model.FirstName @Model.LastName</h1>
 <br />
 @if(isAdmin)
 {
-    <a asp-action="Index" class="btn btn-primary">Back To List</a>
-    <br />
+    <div align="center">
+        <a asp-action="Index" class="btn btn-primary">Back To List</a>
+    </div>
 }
 @if(isEmployee)
 {
-    <a asp-controller="LeaveRequests" asp-action="Index" class="btn btn-primary">View Request History</a>
-    <br />
+    <div align="center">
+        <a asp-controller="LeaveRequests" asp-action="Index" class="btn btn-primary">View Request History</a>
+    </div>
 }
 <div>
     <hr />
@@ -65,7 +67,7 @@
 {
     <div class="card">
         <div class="card-header">
-            <h4>Leave Allocations for period @Model.LeaveAllocations[0].Period.Name</h4>
+            <h4 align="center">Leave Allocations for period @Model.LeaveAllocations[0].Period.Name</h4>
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item">
