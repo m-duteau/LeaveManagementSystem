@@ -41,3 +41,36 @@ After creating one or more leave requests, employees may view their request hist
 Here, the employee may view whether requests are pending, accepted, or denied. Also, employees are able to cancel leave requests from this screen if leave is no longer needed or was requested erroneously.
 
 # Administrator Views and Functions
+
+To have a functioning Administrator account, consult [ApplicationUserConfiguration.cs](https://github.com/m-duteau/LeaveManagementSystem/blob/master/LeaveManagementSystem.Data/Configurations/ApplicationUserConfiguration.cs) and modify the fields so that they are appropriate for your respective administrator.
+
+### Periods
+<p align=center>
+  <img src=https://github.com/m-duteau/LeaveManagementSystem/blob/master/LeaveManagementSystem-Screenshots/admin-view-periods.png?raw=true>
+</p>
+
+Periods must be added in order for leave types to be appropriately allocated to employees based off of the current fiscal year. Creating or editing a period will direct to the following view:
+
+<p align=center>
+  <img src=https://github.com/m-duteau/LeaveManagementSystem/blob/master/LeaveManagementSystem-Screenshots/admin-view-create-period.png>
+</p>
+
+The periods displayed use the first day of the year and last day of the year to determine the period, but this can vary depending on your company's determined fiscal year.
+Ensure that dates are entered correctly based on the information that is relevant to your company.
+
+Once periods are set, leave types will be automatically allocated when a user registers or when an administrator views an employee's allocations and the system detects that there are missing allocations.
+The days allocated for each leave type for an employee is based on accrual using the current date as it relates to the period's start date.
+(Refer to the AllocateLeave method in [LeaveAllocationsService.cs](https://github.com/m-duteau/LeaveManagementSystem/blob/master/LeaveManagementSystem.Application/Services/LeaveAllocations/LeaveAllocationsService.cs).)
+
+### Leave Types
+<p align=center>
+  <img src=https://github.com/m-duteau/LeaveManagementSystem/blob/master/LeaveManagementSystem-Screenshots/admin-view-leave-types.png?raw=true>
+</p>
+
+Administrators may view, add, edit, or delete the different leave types that are made available by the system. Creating or editing leave types will direct to the following view:
+
+<p align=center>
+  <img src=https://github.com/m-duteau/LeaveManagementSystem/blob/master/LeaveManagementSystem-Screenshots/admin-view-create-leave-type.png>
+</p>
+
+After adding the leave type name and base value for number of days, it will be added to the leave types list. 
