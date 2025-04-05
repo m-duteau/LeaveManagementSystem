@@ -115,6 +115,6 @@ From this screen, the administrator can also review the pending leave requests i
 
 After reviewing the details of the leave request, the decision to approve or decline the request will update both the request's status on the leave requests list as well as within the employee's view of their request history.
 
-### Special Thanks
+# Special Thanks
 Special thanks to Trevoir Williams for instructing and sharing his expertise in his Complete ASP.NET Core and Entity Framework Development course.
 Also thanks for [srip](https://www.flaticon.com/authors/srip), [bqlqn](https://www.flaticon.com/authors/bqlqn), [Nhor Phai](https://www.flaticon.com/authors/nhor-phai), and [Vector Squad](https://www.flaticon.com/authors/vector-squad) for providing their artwork for use in web applications via [Flaticon](https://www.flaticon.com/).
